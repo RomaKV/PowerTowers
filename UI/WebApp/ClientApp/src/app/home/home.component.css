@@ -1,0 +1,93 @@
+.indicators {
+  background-color: #333333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 12px;
+  min-width: 100px;
+}
+
+.state { margin: 10px 0px 20px 0px; }
+
+.state-indicator {
+  height: 10px;
+  margin: 5px 0 0px 0px;
+  width: 120px;
+}
+
+.title-indicator {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  word-break: break-all;
+}
+
+.title-percent {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.indicator-back {
+  background-color: #666666;
+  height: 405px;
+  position: relative;
+  width: 120px;
+}
+
+.indicator-empty {
+  background-color: #666666;
+  height: 400px;
+  left: 10px;
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+
+.indicator-full {
+  background-color: green;
+  height: 400px;
+  left: 10px;
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+
+.value-indicator {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.value-title {
+  color: #fff;
+  font-size: 1.0rem;
+  margin: 10px 0 5px 0;
+  text-align: center;
+}
+
+
+.menu a {
+  color: darkkhaki;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menu { margin: 20px 0 30px 0; }
+
+.item {
+  background-color: #333333;
+  box-sizing: border-box;
+  flex-basis: 6.0%;
+  justify-content: space-around;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.content main {
+  overflow: hidden;
+  padding: 10px 0;
+}

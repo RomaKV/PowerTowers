@@ -1,0 +1,124 @@
+
+.menu a {
+  color: darkkhaki;
+  font-size: 1.0rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu  {
+  margin: 20px 0 30px 0;
+}
+
+
+.indicator {
+  top: 0;
+  position: absolute;
+  margin-top: 130px;
+  width: 40%;
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+  min-width: 350px;
+  left: 50%;
+  margin-left: -20%;
+  background-color: #fff;
+  color: #fff;
+ 
+}
+
+
+h3 {
+  text-align: center !important;
+  margin-top: 10px;
+}
+
+.indicator-form {
+  width: 100%;
+  height: 100%;
+  border: 1.25px solid #58b400;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: #000;
+  display: block;
+}
+
+.indicator-item label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='date'] {
+  text-align: center;
+}
+
+.indicator-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px 25px 30px;
+  min-height: 60px;
+}
+
+.indicator-item-submit {
+  display: flex;
+  justify-content: center;
+  margin: 0px 30px 30px 30px;
+}
+
+.btn-submit {
+  align-self: flex-end;
+  padding: 7px 25px 5px 25px;
+  background-color: #58b400;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-right: 8px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+  .btn-submit:disabled {
+    background: #ccc;
+    color: #212529;
+    cursor: not-allowed;
+  }
+
+.validation {
+  display: block;
+  height: 15px;
+  color: red;
+  font-size: 0.9rem;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+input.ng-valid.ng-touched {
+  border: 1px solid #58b400;
+}
+
+.close-button {
+  color: #58b400;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1px;
+  margin-right: 1px;
+}
+
+  .close-button:hover {
+    color: #212529;
+  }
+
+
+
+

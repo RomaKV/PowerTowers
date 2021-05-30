@@ -1,0 +1,39 @@
+
+<div class="menu">
+  <a routerLink="/"> На главную</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a style="color: red; text-align: right" [routerLink]="[]" (click)="delete()"> Удалить</a>
+</div>
+
+
+
+
+<div class="indicator">
+  <form class="indicator-form" [formGroup]="form" (ngSubmit)="submit()">
+   
+    <h3>Редактирование</h3>
+
+    <div class="indicator-item">
+        <label>Название</label>
+        <input type="text" formControlName="title" />
+      </div>
+      <div class="indicator-item">
+        <label>Минимальное значение</label>
+        <input type="number" min="0" formControlName="minValue" />
+      </div>
+      <div class="indicator-item">
+        <label>Максимальное значение</label>
+        <input type="number" min="0" formControlName="maxValue" />
+      </div>
+
+      <div class="indicator-item-submit">
+        <button class="btn-submit"
+                type="submit"
+                [disabled]="form.invalid">
+          Сохранить
+        </button>
+
+      </div>
+  </form>
+  </div>
+

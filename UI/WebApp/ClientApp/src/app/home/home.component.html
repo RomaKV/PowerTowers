@@ -1,0 +1,40 @@
+
+<div class="menu">
+  <a [routerLink]="['/new']"> Добавить</a>
+</div>
+
+<div class="indicators">
+  <div class="item" *ngFor="let indicator of indicatorService.indicators">
+
+    <div class="title-indicator">{{ indicator.title }}</div>
+
+    <div class="state">
+      <div class="title-percent">{{ indicator.value | CalcPercent : indicator.minValue : indicator.maxValue}}%</div>
+
+      <div class="state-indicator"
+           [ngStyle]="{
+                        'background-color':
+                            indicator.value | CalcStateColor : indicator.minValue : indicator.maxValue
+                    }">
+      </div>
+    </div>
+    <div class ="indicator-back">
+      <div class="indicator-full">
+
+      </div>
+      <div class="indicator-empty"
+           [ngStyle]="{
+                        'height':
+                            indicator.value | CalcPercent : indicator.minValue : indicator.maxValue | CalcHeightIndicator : 400
+                    }">
+      </div>
+
+    </div>
+    <div class="value-title">Масса карналита</div>
+    <div class="value-indicator">{{ indicator.value }}</div>
+    <div class="menu">
+      <a [routerLink]="['/edit', indicator.id]"> Редактировать</a>
+    </div>
+
+  </div>
+</div>

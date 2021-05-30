@@ -1,0 +1,34 @@
+
+<div class="menu">
+  <a routerLink="/" > На главную</a>
+</div>
+
+<div class="indicator">
+  <form class="indicator-form" [formGroup]="formNew" (ngSubmit)="submit()">
+   
+    <h3>Создание</h3>
+
+    <div class="indicator-item">
+        <label>Название</label>
+        <input type="text" formControlName="title" />
+      </div>
+      <div class="indicator-item">
+        <label>Минимальное значение</label>
+        <input type="number" min="0" formControlName="minValue" />
+      </div>
+      <div class="indicator-item">
+        <label>Максимальное значение</label>
+        <input type="number" min="0" formControlName="maxValue" />
+      </div>
+
+      <div class="indicator-item-submit">
+        <button class="btn-submit"
+                type="submit"
+                [disabled]="formNew.invalid">
+          Создать
+        </button>
+
+      </div>
+  </form>
+  </div>
+
